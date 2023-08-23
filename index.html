@@ -27,9 +27,9 @@
         <div class="row">
             <h1 class="col-md-20 text-center">
                 <br></br>
-                <b>GRAM</b>: Generative Radiance Manifolds for 3D-Aware Image Generation<br>
+                <b>DPF-Net</b>: Combining Explicit Shape Priors in Deformable Primitive Field for Unsupervised Structural Reconstruction of 3D Objects<br>
                 <small>
-                    CVPR 2022 (Oral Presentation)
+                    ICCV 2023
                 </small>
             </h1>
             <hr style="margin-top:0px">
@@ -38,49 +38,49 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://YuDeng.github.io/" style="font-size: 16px;">
-                            Yu Deng
-                        </a>
+<!--                         <a href="https://YuDeng.github.io/" style="font-size: 16px;"> -->
+                            Qingyao Shuai
+<!--                         </a> -->
                         <sup>1</sup>
                     </li>
                     <li>
-                        <a href="https://jlyang.org/" style="font-size: 16px;">
-                            Jiaolong Yang
-                        </a>
+<!--                         <a href="https://jlyang.org/" style="font-size: 16px;"> -->
+                            Chi Zhang
+<!--                         </a> -->
                         <sup>2</sup>
                     </li>
                     <li>
-                        <a href="https://jeffreyxiang.github.io" style="font-size: 16px;">
-                            Jianfeng Xiang
-                        </a>
+<!--                         <a href="https://jeffreyxiang.github.io" style="font-size: 16px;"> -->
+                            Kaizhi Yang
+<!--                         </a> -->
                         <sup>3</sup>
                     </li>
                     <li>
-                        <a href="http://www.xtong.info/" style="font-size: 16px;">
-                            Xin Tong
+                        <a href="http://staff.ustc.edu.cn/~xjchen99/" style="font-size: 16px;">
+                            Xuejin Chen
                         </a>
                         <sup>2</sup>
                     </li><br>
                     <a></a><br>
                     <li>
-                        <sup>1</sup>
+<!--                         <sup>1</sup> -->
                         <a href="https://www.tsinghua.edu.cn/en/" style="font-size: 16px;">
-                            Tsinghua Unviersity
+                            Unviersity of Science and Technology of China
                         </a>
                     </li>
-                    <li>
+<!--                     <li>
                         <sup>2</sup>
                         <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/"
                             style="font-size: 16px;">
                             Microsoft Research Asia
                         </a>
-                    </li>
-                    <li>
+                    </li> -->
+<!--                     <li>
                         <sup>3</sup>
                         <a href="http://en.ustc.edu.cn/" style="font-size: 16px;">
                             University of Science and Technology of China
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -120,27 +120,21 @@
                 </h2>
                 <hr style="margin-top:0px">
                 <p class="text-justify" style="font-size: 16px;">
-                    3D-aware image generative modeling aims to generate
-                    3D-consistent images with explicitly controllable camera
-                    poses. Recent works have shown promising results by training
-                    neural radiance field (NeRF) generators on unstructured
-                    2D image collections, but they still can not generate
-                    highly-realistic images with fine details. A critical reason
-                    is that the high memory and computation cost of volumetric
-                    representation learning greatly restricts the number of point
-                    samples for radiance integration during training. Deficient
-                    point sampling not only limits the expressive power of the
-                    generator to handle high-frequency details but also impedes
-                    effective GAN training due to the noise caused by unstable
-                    Monte Carlo sampling. We propose a novel approach that
-                    regulates point sampling and radiance field learning on 2D
-                    manifolds, embodied as a set of implicit surfaces in the 3D
-                    volume learned with GAN training. For each viewing ray,
-                    we calculate the ray-surface intersections and accumulate
-                    their radiance predicted by the network. We show that by
-                    training and rendering such radiance manifolds, our generator
-                    can produce high quality images with realistic fine
-                    details and strong visual 3D consistency.
+                    Unsupervised methods for reconstructing structures face significant challenges 
+                    in capturing the geometric details with consistent structures among diverse shapes
+                    of the same category. To address this issue, we present a novel unsupervised structural
+                    reconstruction method, named DPF-Net, based on a new Deformable Primitive Field (DPF) 
+                    representation, which allows for high-quality shape reconstruction using parameterized 
+                    geometric primitives. We design a two-stage shape reconstruction pipeline which consists
+                    of a primitive generation module and a primitive deformation module to approximate the 
+                    target shape of each part progressively. The primitive generation module estimates the 
+                    explicit orientation, position, and size parameters of parameterized geometric primitives,
+                    while the primitive deformation module predicts a dense deformation field based on a 
+                    parameterized primitive field to recover shape details. The strong shape prior encoded 
+                    in parameterized geometric primitives enables our DPF-Net to extract high-level structures
+                    and recover fine-grained shape details consistently. The experimental results on three 
+                    categories of objects in diverse shapes demonstrate the effectiveness and generalization 
+                    ability of our DPF-Net on structural reconstruction and shape segmentation.
                 </p>
             </div>
         </div>
