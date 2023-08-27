@@ -119,7 +119,7 @@
             </div>
         </div>
 
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
                 <br></br>
                 <h2>
@@ -128,28 +128,12 @@
                 <hr style="margin-top:0px">
                 <div class="text-center">
                     <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://www.youtube.com/embed/hBJWZwl_JCI" allowfullscreen=""
+                        <iframe src="" allowfullscreen=""
                             style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                     </div>
                 </div>
             </div>
-        </div> -->
-
-        <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <br></br>
-                <h2>
-                    Deformed Primitive Field
-                </h2>
-                <hr style="margin-top:0px">
-                <img src="./files/overview.png" class="img-responsive" alt="overview"><br>
-                <p class="text-justify" style="font-size: 16px;">
-                    We propose a novel Deformable Primitive Field for represent the structure and geometry of object at the same time.
-                </p>
-            </div>
         </div>
-
-
 
         <div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
@@ -169,7 +153,22 @@
             </div>
         </div>
 
-
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br></br>
+                <h2>
+                    Deformed Primitive Field
+                </h2>
+                <hr style="margin-top:0px">
+                <img src="./files/DPF.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify" style="font-size: 16px;">
+                    Illustration of our proposed deformable primitive fields. (a) Each object part is represented by a parameterized 
+                    primitive field of a cuboid primitive (top) or a cylinder primitive (bottom) with different parameters. (b) 
+                    The parameterized primitive is further deformed via a deformation field to better approximate the shape details of each part. 
+                    (c) An occupancy field is obtained for the entire object by assembling the deformed primitive fields of all the parts.
+                </p>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
@@ -181,25 +180,9 @@
                 <p class="text-justify" style="font-size: 16px;">
                     Comparing with primitive-based method CA and implicit field based method RIM-Net, 
                     DPF-Net generates high-quality 3D reconstruction with smooth surface meshes and consistent part structures.
-
-                    <!-- GRAM is able to generate high-quality images with fine details. Moreover, it allows an explicit
-                    control of camera viewpoint and achieves highly consistent results across different views.
-                    It even maintains strong visual 3D consistency for very thin structures such as bangs of hair,
-                    eyeglass, and whiskers of cat. -->
                 </p>
-                <!-- <video style="width:100%;height:100%;" playsinline autoplay loop preload muted>
-                    <source src="./files/SegReconstruction.png" type="video/mp4">
-                </video> -->
                 <img src="./files/segReconstruction.png" class="img-responsive" alt="segRecon"><br>
                 <hr style="margin-top:0px">
-                <!-- <p class="text-justify" style="font-size: 16px;">
-                    DPF-Net achieves closer 3D reconstuction to the input image with better part partition
-                    comparing with previous reconstruction method and structural reconstruction methods.
-                </p> -->
-                <!-- <video style="width:100%;height:100%;" playsinline autoplay loop preload muted>
-                    <source src="./files/.mp4" type="video/mp4">
-                </video> -->
-                <!-- <img src="./files/svr.png" class="img-responsive" alt="svr"><br> -->
             </div>
         </div>
 
@@ -214,48 +197,9 @@
                     DPF-Net achieves closer 3D reconstuction to the input image with better part partition
                     comparing with previous reconstruction method and structural reconstruction methods.
                 </p>
-                <!-- <video style="width:93%;height:93%;" playsinline autoplay loop preload muted>
-                    <source src="./files/manifold.mp4" type="video/mp4">
-                </video> -->
                 <img src="./files/svr3.png" class="img-responsive" alt="segRecon"><br>
             </div>
         </div>
-
-        <!-- <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <br></br>
-                <h2>
-                    3D Geometry Visualization
-                </h2>
-                <hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                    Although GRAM confines the input domain of the radiance field on 2D manifolds, we can still extract
-                    proxy 3D shapes of the generated objects using the volume-based marching cubes algorithm. It can be
-                    observed that GRAM produces high-quality geometry with detailed structures well depicted, which is
-                    the key to achieve strong visual
-                    3D consistency across different views.
-                </p>
-                <video style="width:100%;height:100%;" playsinline autoplay loop preload muted>
-                    <source src="./files/shape.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div> -->
-
-<!--         <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <br></br>
-                <h2>
-                    Image Embedding and Editing
-                </h2>
-                <hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                GAN inversion is naturally supported by GRAM. Given an input image, we can first embed it into the learned latent space and then freely move the camera viewpoint to synthesize images at novel views.
-                </p>
-                <video style="width:67%;height:67%;" playsinline autoplay loop preload muted>
-                    <source src="./files/inv2.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div> -->
 
         <div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
@@ -266,9 +210,7 @@
                 <hr style="margin-top:0px">
                 <p class="text-justify" style="font-size: 16px;">
                 </p>
-                <div style="text-align: center;">
                 <img src="./files/AdditionalResultsChair.png" class="img-responsive" alt="segRecon" ><br>
-                </div>
             </div>
         </div>
 
